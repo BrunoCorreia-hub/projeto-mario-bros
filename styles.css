@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa-container {
+    width: 100%;
+    height: 100%;
+}
+
+.caixa-header {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.caixa-header a {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.caixa-header a:hover {
+    color: #c51111;
+    font-size: 27px;
+    transition: 0.4s;
+}
+
+.imagem-logo {
+    height: 100px;
+}
+
+.imagem-nome {
+    height: 200px;
+}
+
+.caixa-sobre {
+    width: 35%;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+button {
+    background-color: #c51111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: 0.4s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.caixa-imagem img {
+    height: 400px;
+}
+
+.caixa-display {
+    display: flex;
+    margin-top: 20%;
+    justify-content: space-around;
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    left: 0;
+}
+
+.mascara {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(60, 58, 58, 0.4066001400560224) 50%, rgba(0, 0, 0, 1) 100%);
+    position: fixed;
+    left: 0;
+}
+
+.link-whatzap img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.link-whatzap {
+    cursor: pointer;
+}
+
+.link-whatzap:hover {
+    opacity: 0.7;
+}
+
+.caixa-formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    border-radius: 5px;
+    min-width: 300px;
+    min-height: 250px;
+    position: fixed;
+    top: 35%;
+    left: -140px;
+    transform: translateX(-50%);
+    padding: 15px;
+    z-index: 1;
+}
+
+.caixa-formulario input {
+    height: 30px;
+    width: 270px;
+    padding-left: 10px;
+    outline: none;
+    font-weight: 600;
+}
+
+.caixa-formulario input:hover {
+    border: 2px solid green;
+}
+
+.caixa-formulario textarea {
+    width: 270px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.mascara-formulario {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8687850140056023) 0%, rgba(0, 0, 0, 0.8631827731092436) 100%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+
+
+@media(max-width: 1100px) {
+
+    p {
+        display: none;
+    }
+
+    .caixa-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixa-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixa-sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-logo {
+        display: none;
+    }
+
+    .caixa-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixa-header a {
+        font-size: 15px;
+    }
+}
